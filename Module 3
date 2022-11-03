@@ -1,0 +1,230 @@
+2.  0
+3.  9 9 9
+4.  1.0
+5.  
+
+#include <stdio.h>
+int main()
+{	  int a, b;
+ 	  scanf("%d",&a);
+ 	  scanf("%d",&b);
+ 	  printf("%d", a+b);
+    return 0;
+}
+
+
+6.
+
+int addDigitByDigit(int a,int b,int c){
+  	int n;
+ 	  scanf("%d%d%d",&a,&b,&c);
+  	n=a+b+c;
+  	return n;
+}
+
+8.  0
+9.  1
+10. x and y are equal
+11. 10 10 0
+12. Code Quotient
+13. 1 10 0
+14. 0 1
+15. 0
+16.  
+  1.)  1  1
+
+  2.)  0  0
+
+  3.)  1  1
+
+  4.)  1  1
+
+  5.)  1  1
+
+
+17. Get better at Coding
+18. 
+
+
+#include <stdio.h>
+
+int main()
+{
+	  int l,b,perimeter,area;
+	  scanf("%d %d" , &l, &b);
+	  perimeter=2*(l+b);
+	  area=(l*b);
+	  printf("%d %d",area,perimeter);
+    
+    return 0;
+}
+
+
+19. 
+
+
+#include <stdio.h>
+int main()
+{
+	  float r,dia,area,pie;
+	  scanf("%f" , &r);
+	  dia=2*r;
+	  pie=3.14;
+	  area = pie*r*r;
+	  printf("%.2f %.2f",dia,area);
+    return 0;
+}
+
+
+21. 1
+22. 4
+24. 10 4
+25. Syntax Error
+26. 1
+27. 1133
+28. 
+
+#include <stdio.h>
+/* Include other headers as needed */
+int main(){   
+    int a,b,c=0;
+    scanf("%d",&a);
+    scanf("%d",&b);
+    c=a;
+    a=b;
+    b=c;
+    printf("%d\n", a);
+    printf("%d", b);
+    return 0;
+}
+
+
+29. 
+
+
+#include<stdio.h>
+int main(int argc, char const *argv[])
+{   float cm,m,km;
+    scanf("%f",&cm);
+    m=cm/100;
+    km=m/1000;
+    printf("%.2f %.2f", m, km);
+    return 0;
+}
+
+
+31. 3
+32. right to left
+33. +
+34. 
+
+
+#include <stdio.h>
+/* Include other headers as needed */
+int main(){   
+    int s1,s2,s3,s4,s5,sum;
+    scanf("%d %d %d %d %d",&s1,&s2,&s3,&s4,&s5);
+    sum=s1+s2+s3+s4+s5;
+    printf("%d ",sum);
+    printf("%d ",sum/5);
+    return 0;
+}
+
+
+35.
+
+
+#include <stdio.h>
+/* Include other headers as needed */
+int main(){   
+    int a,b;
+    scanf("%d\n",&a);
+    scanf("%d",&b);
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    printf("%d\n", a);
+    printf("%d", b);
+    return 0;
+}
+
+
+36.
+
+
+#include<stdio.h>
+int main()
+{
+    int basic_salary,gross_salary,da,hra;
+    scanf("%d",&basic_salary);
+    da=basic_salary*20/100;
+    hra=basic_salary*10/100;
+    gross_salary= basic_salary+hra+da;
+    printf("%d",gross_salary);
+    return 0;
+}
+
+
+37.
+
+
+#include<stdio.h> 
+int main( )
+{
+	  float temp;
+    scanf("%f",&temp);
+    printf("%.2f",temp* 9/5 + 32);
+    return 0;
+}
+
+
+38.
+
+#include <stdio.h>
+#include<math.h>
+int main()
+{   int side;
+    float area,constant;
+    scanf("%d",&side);
+ 	  constant= pow(3,0.5)/4;
+    area=pow(side,2);
+    area=area*constant;
+    printf("%.2f",area);
+    return 0;
+}
+
+
+39.
+
+#include<stdio.h>
+int main()
+{   float P,T,R,total;
+    scanf("%f %f %f",&P,&T,&R);
+    total=P*T*R/100;
+    printf("%.2f", total);
+    /* code */
+    return 0;
+}
+
+
+40.
+
+#include<stdio.h>
+int main()
+{   int a,total=0,b;
+    scanf("%d",&a);
+    b=a%10;
+    total=total+b;
+    a=a/10;
+    b=a%10;
+    total=total+b;
+    a=a/10;
+    total=total+a;
+    printf("%d",total);
+    return 0;
+}
+
+
+
+
+
