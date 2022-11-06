@@ -1,0 +1,82 @@
+1. 
+
+#include<stdio.h>
+int main()
+{
+    int a,b,c,d;
+    scanf("%d %d %d %d", &a,&b,&c,&d);
+    a=a*1000;
+    b=b*100;
+    c=c*10;
+    d=d+a+c+b;
+    printf("%d",d);
+    return 0;
+}
+
+
+2.
+
+#include<stdio.h>
+int main()
+{
+    int a,b,c;
+    scanf("%d", &a);
+    b=a%10;
+    c=b*1000;
+    a=a/10;
+    b=a%10;
+    c=c+b*100;
+    a=a/10;
+    b=a%10;
+    c=c+b*10;
+    a=a/10;
+    c=c+a;
+    printf("%d", c);
+    return 0;
+}
+
+3.
+
+#include <stdio.h>
+int main()
+{	int year,week,day,total;
+ 	scanf("%d",&total);
+ 	year=total/365;
+ 	total=total-(365*year);
+ 	week=total/7;
+ 	total=total-(week*7);
+ 	day=total;
+ 	printf("%d %d %d",year,week,day);
+  return 0;
+}
+
+
+4.
+
+#include<stdio.h>
+int main()
+{
+    int t,y,m;
+    scanf("%d %d",&t,&y);
+    m=t+y;
+    printf("%d",180-m);
+    return 0;
+}
+
+
+5.
+
+#include<stdio.h>
+int main()
+{
+    int t,y,m;
+    scanf("%d",&t);
+    m=t%10;
+    y=t/1000;
+    printf("%d",m+y);
+    return 0;
+}
+
+
+6. Abhi hua nhi
+
