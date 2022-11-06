@@ -1,0 +1,313 @@
+5.
+
+#include <stdio.h>
+/* Include other headers as needed */
+int main()
+{	int a,b;
+ 	scanf("%d %d",&a,&b);
+ 	if(a==b){
+      printf("Equal");
+    }
+ 	else{
+      printf("Not Equal");
+    }
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    return 0;
+}
+
+6.
+
+
+#include <stdio.h>
+/* Include other headers as needed */
+int main()
+{
+	  int a,b;
+  	scanf("%d %d",&a,&b);
+  	if(a>b){
+      printf("%d",b);
+    }
+  	else{
+      printf("%d",a);
+    }
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    return 0;
+}
+
+
+10.
+
+
+#include <stdio.h>
+/* Include other headers as needed */
+int main()
+{	int value,cost;
+ 	scanf("%d",&value);
+ 	scanf("%d",&cost);
+ 	if(value<cost){
+      printf("Profit\n");
+      printf("%d",cost-value); 
+	}
+ 	else if(value>cost){
+      printf("Loss\n");
+      printf("%d\n",value-cost);
+    }
+ 	else{
+      printf("No Profit No Loss\n");
+    }
+  return 0;
+}
+
+
+11.
+
+
+#include<stdio.h>
+int main()
+{
+    int a,b,c,d;
+    scanf("%d", &a);
+    b=a%10;
+    c=b*1000;
+    d=a/10;
+    b=d%10;
+    c=c+b*100;
+    d=d/10;
+    b=d%10;
+    c=c+b*10;
+    d=d/10;
+    c=c+d;
+    if (c==a){
+        printf("Equal");
+    }
+    else{
+        printf("Not Equal");
+    }
+    return 0;
+}
+
+
+12.
+
+#include<stdio.h>
+int main()
+{   int a;
+    scanf("%d",&a);
+    if(a>=75){
+        printf("A");
+    }
+    else if(a<75 && a>=60){
+        printf("B");
+    }
+    else if(a<60 && a>=55){
+        printf("C");
+    }
+    else if(a<55 && a>=50){      
+      printf("D");
+    }
+    else{
+        printf("E");
+    }
+    return 0;
+}
+
+
+16.
+
+#include<stdio.h>
+int main()
+{
+    char a;
+    int  b;
+    scanf("%c",&a);
+    b=("%d",a);
+    if (b>=48 && b<58)
+    {
+        printf("Digit");
+    }
+    else if(b>=65 && b<91){
+        printf("UPPER CASE");
+    }
+    else if(b>=97 && b<123){
+        printf("lower case");
+    }
+    else{
+        printf("Special character");
+    }
+    return 0;
+}
+
+
+17.
+
+#include<stdio.h>
+int main()
+{
+    /* code */
+    int First_side,Second_side,Third_side;
+    scanf("%d %d %d",&First_side,&Second_side,&Third_side);
+    if (First_side+Second_side>Third_side && Third_side+Second_side>First_side && Third_side+First_side>Second_side ){
+        printf("Valid");
+    }
+    else{
+        printf("Not Valid");
+    }
+    return 0;
+}
+
+
+18.
+
+
+#include <stdio.h>
+int main()
+{
+	int a,b,c;
+  	scanf("%d %d %d",&a,&b,&c);
+  	if(a>b && b>c){
+      printf("%d",c);
+    }
+  	else if(a<b && b<c){
+      printf("%d",a);
+    }
+  	else{
+      printf("%d",b);
+    }
+    return 0;
+}
+
+19.
+
+
+#include <stdio.h>
+int main()
+{	int a;
+ 	scanf("%d",&a);
+ 	if(a>0){
+      printf("positive");
+    }
+ 	else if(a<0){
+      printf("negative");
+    }
+ 	else{
+      printf("zero");
+    }
+  return 0;
+}
+
+
+20.
+
+#include <stdio.h>
+int main()
+{
+	  int a;
+  	scanf("%d",&a);
+  	if(a%5==0 && a%7==0){
+      printf("yes");
+    }
+  	else{
+      printf("no");
+    }
+    return 0;
+}
+
+21.
+
+
+#include <stdio.h>
+/* Include other headers as needed */
+int main()
+{
+	  int a;
+  	scanf("%d",&a);
+  	if(a%2==0){
+      printf("Even");
+    }
+  	else{
+      printf("Odd");
+   	}
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    return 0;
+}
+
+
+22.
+
+#include <stdio.h>
+int main()
+{	int a;
+ 	scanf("%d",&a);
+ 	if(a==1){
+      printf("Monday");
+    }
+ 	if(a==2){
+      printf("Tuesday");
+    }
+ 	if(a==3){
+      printf("Wednesday");
+    }
+ 	if(a==4){
+      printf("Thursday");
+    }
+ 	if(a==5){
+      printf("Friday");
+    }
+ 	if(a==6){
+      printf("Saturday");
+    }
+ 	if(a==7){
+      printf("Sunday");
+    }
+    return 0;
+}
+
+
+
+23.
+
+
+#include<stdio.h>
+int main()
+{
+    char a;
+    int  b;
+    scanf("%c",&a);
+    b=("%d",a);
+    if(b>=65 && b<91){
+        printf("yes");
+    }
+    else if(b>=97 && b<123){
+        printf("yes");
+    }
+    else{
+        printf("no");
+    }
+    return 0;
+}
+
+
+24.
+
+
+#include<stdio.h>
+int main()
+{
+    char a;
+    int  b;
+    scanf("%c",&a);
+    b=("%d",a);
+    if(b>=65 && b<91){
+        printf("UPPER");
+    }
+    if(b>=97 && b<123){
+        printf("lower");
+    }
+    return 0;
+}
+
+
+25. abhi nhi hua
+
+
+
