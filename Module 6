@@ -72,8 +72,8 @@ int main()
 
 
 
-
 2.
+
 
 
 #include<stdio.h>
@@ -106,7 +106,10 @@ int main()
 }
 
 
+
 3.
+
+
 
 #include<stdio.h>
 int main()
@@ -165,6 +168,7 @@ int main()
 }
 
 
+
 5.
 
 
@@ -188,6 +192,7 @@ int main()
     /* Enter your code here. Read input from STDIN. Print output to STDOUT */
     return 0;
 }
+
 
 
 6.
