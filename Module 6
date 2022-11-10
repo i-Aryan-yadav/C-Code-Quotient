@@ -1,0 +1,230 @@
+1.
+
+#include<stdio.h>
+int main()
+{   int amt,not;
+    scanf("%d",&amt);
+    if (amt/2000>0){
+        not=amt/2000;
+        printf("%d ",not);
+        amt=amt-(2000*not);   
+    }else{
+        printf("0 ");
+    }
+    if (amt/500>0){
+        not=amt/500;
+        printf("%d ",not);
+        amt=amt-(500*not);
+    }else{
+        printf("0 ");
+    }
+    if (amt/100>0){
+        not=amt/100;
+        printf("%d ",not);
+        amt=amt-(100*not);
+    }else{
+        printf("0 ");
+    }
+    if (amt/50>0){
+        not=amt/50;
+        printf("%d ",not);
+        amt=amt-(50*not);
+    }else{
+        printf("0 ");
+    }
+    if (amt/20>0){
+        not=amt/20;
+        printf("%d ",not);
+        amt=amt-(20*not);
+    }else{
+        printf("0 ");
+    }
+    if (amt/10>0){
+        not=amt/10;
+        printf("%d ",not);
+        amt=amt-(10*not);
+    }else{
+        printf("0 ");
+    }
+    if (amt/5>0){
+        not=amt/5;
+        printf("%d ",not);
+        amt=amt-(5*not);
+    }else{
+        printf("0 ");
+    }
+    if (amt/2>0){
+        not=amt/2;
+        printf("%d ",not);
+        amt=amt-(2*not);
+    }else{
+        printf("0 ");
+    }
+    if (amt/1>0){
+        not=amt/1;
+        printf("%d ",not);
+        amt=amt-(1*not);
+    }else{
+        printf("0 ");
+    }
+    return 0;
+}
+
+
+
+
+2.
+
+
+#include<stdio.h>
+int main()
+{   int unit;
+    float bill;
+    scanf("%d",&unit);
+    if (unit>250){
+      	bill=(100*4.20)+ (100*2.75)+(50*2.5);
+        bill=bill+(unit-250)*4.50;
+        bill=bill+bill*0.1;
+        printf("%.2f",bill);
+    }
+    else if ((unit>=1) && (unit<=50)){
+        bill=unit*2.5;
+        bill=bill+bill*0.1;
+        printf("%.2f",bill);
+        }
+    else if (unit<=150){
+        bill=(100*2.75)+(50*2.5);
+        bill=bill+bill*0.1;
+        printf("%.2f",bill);
+    }
+    else if (unit<=250){
+        bill=(100*4.20)+ (100*2.75)+(50*2.5);
+        bill=bill+bill*0.1;
+        printf("%.2f",bill);
+    }
+    return 0;
+}
+
+
+3.
+
+#include<stdio.h>
+int main()
+{
+    float diss,amt;
+    scanf("%f",&amt);
+    if(amt<1000){
+        printf("%.2f",amt);
+    }
+    else if(amt>1000 && amt<5000){
+        diss=amt*0.05;
+        amt=amt-diss;
+        printf("%.2f",amt);
+    }
+    else if(amt>5000 && amt<10000 ){
+        diss=amt*0.1;
+        amt=amt-diss;
+        printf("%.2f",amt);
+    }
+    else if(amt>10000 && amt<30000){
+        diss=amt*0.15;
+        amt=amt-diss;
+        printf("%.2f",amt);
+    }
+    else {
+        diss=amt*0.17;
+        amt=amt-diss;
+        printf("%.2f",amt);
+    }
+    return 0;
+}
+
+
+4.
+
+
+#include <stdio.h>
+/* Include other headers as needed */
+int main()
+{	int year;
+ 	scanf("%d",&year);
+ 	if(year%400==0){
+      printf("Leap Year");
+    }	
+ 	else if(year%100==0){
+      printf("Not a Leap Year");
+    }
+ 	else if(year%4==0){
+      printf("Leap Year");
+    }
+ 	else{
+      printf("Not a Leap Year");
+    }
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    return 0;
+}
+
+
+5.
+
+
+#include <stdio.h>
+/* Include other headers as needed */
+int main()
+{	int year;
+ 	scanf("%d",&year);
+ 	if(year%400==0){
+      printf("Leap Year");
+    }	
+ 	else if(year%100==0){
+      printf("Not a Leap Year");
+    }
+ 	else if(year%4==0){
+      printf("Leap Year");
+    }
+ 	else{
+      printf("Not a Leap Year");
+    }
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    return 0;
+}
+
+
+6.
+
+
+#include <stdio.h>
+int main()
+{
+    int days, value = 0, fine = 0;
+    scanf("%d", &days);
+    if (days >= 31)
+    {
+        printf("Membership cancelled");
+    }
+    else if (days == 0)
+    {
+        fine = 0;
+        printf("%d", fine);
+    }
+    else
+    {
+        if (days > 10 && days <= 30)
+        {
+            fine = fine + 50;
+        }
+        else
+        {
+            if (days >= 4 && days <= 10)
+            {
+                fine = fine + 20;
+            }
+            if (days >= 0 && days <= 3)
+            {
+                fine = fine + 10;
+            }
+        }
+        printf("%d", fine);
+    }
+    return 0;
+}
