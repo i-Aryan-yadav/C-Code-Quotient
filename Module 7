@@ -1,0 +1,85 @@
+14. 
+
+
+#include<stdio.h>
+int main(int argc, char const *argv[])
+{
+    char c;
+    scanf ("%c",&c);
+    switch (c)
+  {
+    case 'a':
+    case 'e':
+    case 'i':
+    case 'o':
+    case 'u':
+    case 'A':
+    case 'E':
+    case 'I':
+    case 'O':
+    case 'U':
+      printf("vowel");
+      break;
+    default:
+        printf("consonant");
+        break;
+    }
+    return 0;
+}
+
+
+15.
+
+
+#include<stdio.h>
+int main()
+{
+  int a,b,c;
+  scanf("%d %d %d",&a,&b,&c);
+  if (a>b && b>c)
+  {
+    printf("%d",a);
+  }
+  else if (b>a && a>c)
+  {
+    printf("%d",b);
+  }
+  else{
+    printf("%d",c);
+  }
+}
+
+
+
+16.
+
+
+#include<stdio.h>
+int main()
+{
+    float a,b,ans=0;
+    char c;
+    scanf("%f %c %f",&a,&c,&b);
+    switch (c)
+    {
+    case '+':
+        ans =ans+ a + b;
+        printf("%.2f",ans);
+        break;
+    case '-':
+        ans=ans+ a - b;
+        printf("%.2f",ans);
+        break;
+    case '*':
+        ans =ans+ a * b;
+        printf("%.2f",ans);
+        break;
+    case '/':
+        ans =ans+ a / b;
+        printf("%.2f",ans);
+        break;
+    default:
+        break;
+    }
+    return 0;
+}
